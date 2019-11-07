@@ -16,16 +16,17 @@ public class EncryptionUtil {
     }
 
     /**
-     * MD5加密
+     * 签名校验+MD5加密
      *
-     * @param context
-     * @param input
+     * @param context    签名校验
+     * @param input      需要加密的数据
+     * @param resultType 加密的输出类型 0: 默认 1: 大写
      * @return
      */
-    public static native String encryptionMD5(Context context, String input);
+    public static native String encryptionMD5(Context context, String input, int resultType);
 
     /**
-     * MD5加密+异或运算
+     * 签名校验+MD5加密+异或运算
      *
      * @param context
      * @param key

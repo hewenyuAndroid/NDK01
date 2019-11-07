@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void encryptionMD5(View view) {
-        Log.e("TAG", "--->" + EncryptionUtil.encryptionMD5(this, "123456"));
+        Log.e("TAG", "--->" + EncryptionUtil.encryptionMD5(this, "123456", 0));
     }
 
 }
